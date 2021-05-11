@@ -61,9 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				392913192644942900B3E2EF /* AppDelegate.swift */,
-				3929132E2647058500B3E2EF /* PlayBackViewController.swift */,
 				3929131B2644942900B3E2EF /* SceneDelegate.swift */,
-				3929131D2644942900B3E2EF /* RecordSoundViewController.swift */,
+				39DB7C172648AEAC00704876 /* Controllers */,
 				3929131F2644942900B3E2EF /* Main.storyboard */,
 				392913222644942C00B3E2EF /* Assets.xcassets */,
 				392913242644942C00B3E2EF /* LaunchScreen.storyboard */,
@@ -71,6 +70,15 @@
 				39DB7C142648622F00704876 /* PlaySoundsViewController+Audio.swift */,
 			);
 			path = "Pitch Perfect";
+			sourceTree = "<group>";
+		};
+		39DB7C172648AEAC00704876 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3929132E2647058500B3E2EF /* PlayBackViewController.swift */,
+				3929131D2644942900B3E2EF /* RecordSoundViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

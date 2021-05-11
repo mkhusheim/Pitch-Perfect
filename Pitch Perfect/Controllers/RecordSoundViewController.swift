@@ -22,9 +22,6 @@ class RecordSoundViewController: UIViewController {
         super.viewDidLoad()
         configureUI(recording: false)
     }
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
     
     // MARK: - IBActions
     
@@ -76,15 +73,9 @@ class RecordSoundViewController: UIViewController {
     
     // Function to configure UI according to app state whether recording or not
     func configureUI(recording: Bool) {
-        if recording {
-            stopButton.isEnabled = true
-            recordButton.isEnabled = false
-            recordLabel.text = "Recording in Progress..."
-        } else {
-            stopButton.isEnabled = false
-            recordButton.isEnabled = true
-            recordLabel.text = "Tap to Record"
-        }
+        stopButton.isEnabled = recording
+        recordButton.isEnabled = !recording
+        recordLabel.text = recording ? "Recording in Progress..." : "Tap to Record"
     }
     
     
